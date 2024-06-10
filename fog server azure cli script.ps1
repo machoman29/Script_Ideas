@@ -36,9 +36,10 @@ az vm create --resource-group $myResourceGroup --name $myVM `
     --image UbuntuLTS --nics $myNIC --generate-ssh-keys
 
 #opening port 80 for http, 443 for https and 21 for ftp
-az vm open-port --port 80 --resource-group $myResourceGroup --name myVM
-az vm open-port --port 443 --resource-group $myResourceGroup --name myVM
-az vm open-port --port 21 --resource-group $myResourceGroup --name myVM
+az vm open-port --port 80, 443, 21 --resource-group $myResourceGroup --name myVM
+# az vm open-port --port 443 --resource-group $myResourceGroup --name myVM
+# az vm open-port --port 21 --resource-group $myResourceGroup --name myVM
+
 
 #ssh into the vm
 ssh azureuser@myPublicIP
