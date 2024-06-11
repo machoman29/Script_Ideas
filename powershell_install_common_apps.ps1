@@ -16,6 +16,7 @@ Write-Output "Installing common apps"
 
 #install winget
 Invoke-WebRequest -Uri
+Invoke-WebRequest -Uri 
 
 #give prompts for each install
 winget settings set global sourceName "Microsoft"
